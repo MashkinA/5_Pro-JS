@@ -1,23 +1,36 @@
 body {
-    font-family: 'Manrope';
-    background-color: rgb(150, 150, 150);
+    background-color: #E2DED2;
+    font-family: 'Arimo';
+    color: #232323;
 }
 .sticker {
-    margin: auto;
+    margin-top: 50px;
+    margin-left: 50px;
     padding-top: 50px;
     width: 500px;
     height: 400px;
-    background-color: #EDAB9D;
+    background-color: #9FA092;
+    box-sizing: border-box;
+}
+.sticker_comp {
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-top: 50px;
+    width: 500px;
+    height: 400px;
+    background-color: #D6B98F;
     box-sizing: border-box;
 
 }
 .h1 {
+    font-size: 32px;
     margin-bottom: 50px;
     width: 500px;
     text-align: center;
 }
 .h2 {
-    margin-bottom: 50px;
+    font-size: 24px;
+    margin-bottom: 80px;
     width: 500px;
     text-align: center;
 }
@@ -27,4 +40,5 @@ body {
     height: 50px;
     box-sizing: border-box;
     font-size: 20px;
+    font-weight: 700;
 }
