@@ -66,22 +66,17 @@ ol, ul {
     background-color: #3A3939;
     position: relative;
 }
-.listOfFilms_resultStr:last-child {
-    padding-left: 20px;
-    width: 790px;
-    height: 200px;
-    border: none;
-    box-sizing: border-box;
-    border-radius: 10px;
-    background-color: #3A3939;
-    position: relative;
+.listOfFilms_resultStr:hover {
+    background-color: #635c5c;
 }
+.listOfFilms_resultStr:last-child {
+    margin-bottom: 0px;
+}
+
 .listOfFilms_resultStr_poster {
-    width: 120px;
-    height: 120px;
-    box-sizing: border-box;
-    
-    background-repeat: no-repeat;
+    width: auto;
+    height: 140px;
+    object-fit: fill;
     position: absolute;
     left: 30px;
     top: 30px;

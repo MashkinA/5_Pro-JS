@@ -34,7 +34,7 @@ async function renderlist () {
         ListHTML += 
         `<li class="listOfFilms_resultStr">
        
-        <div class="listOfFilms_resultStr_poster"><img src="${element.Poster}" alt=""></div>
+        <div><img src="${element.Poster}" alt="" class="listOfFilms_resultStr_poster"></div>
         <div class="listOfFilms_resultStr_title">${element.Title}</div>
         <div class="listOfFilms_resultStr_year">${element.Year}</div>
         <div class="listOfFilms_resultStr_type">${element.Type}</div>
