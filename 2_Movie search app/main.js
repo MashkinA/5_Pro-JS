@@ -5,15 +5,8 @@ const btnNode = document.getElementById('inputBtn');
 const listNode = document.getElementById('list');
 
 
-
-function init() {
-    // Не факт что нужно
-};
-
-
 btnNode.addEventListener('click', function(){
     getFilmFromUser();
-    searchFilm();
     renderlist();
 });
 
@@ -31,17 +24,23 @@ function clearInput() {
     inputNode.value = '';
 };
 
-function searchFilm() {
-    fetch
-};
-function renderlist () {
+async function renderlist () {
+    const res = await fetch(`http://www.omdbapi.com/?s=${film}&apikey=2e380f8c`);
+    const listJson = await res.json();
+    list = listJson.Search;
+    
     let ListHTML = '';
     list.forEach(element => {
-        ListHTML += `<li class="list_string">
-        <span class="string">${element}</span>
+        ListHTML += 
+        `<li class="listOfFilms_resultStr">
+       
+        <div class="listOfFilms_resultStr_poster"><img src="${element.Poster}" alt=""></div>
+        <div class="listOfFilms_resultStr_title">${element.Title}</div>
+        <div class="listOfFilms_resultStr_year">${element.Year}</div>
+        <div class="listOfFilms_resultStr_type">${element.Type}</div>
         
-        </li>`; 
-        
+        </li>`;
     });
     listNode.innerHTML = `<ol>${ListHTML}</ol>`;
 };
+

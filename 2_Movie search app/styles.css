@@ -55,50 +55,81 @@ body {
 ol, ul {
     list-style: none;
 }
-.listOfFilms_result {
-    margin-bottom: 3px;
+.listOfFilms_resultStr {
+    margin-bottom: 5px;
     padding-left: 20px;
     width: 790px;
-    height: 71px;
+    height: 200px;
     border: none;
     box-sizing: border-box;
     border-radius: 10px;
     background-color: #3A3939;
     position: relative;
 }
-.listOfFilms_result:last-child {
+.listOfFilms_resultStr:last-child {
     padding-left: 20px;
     width: 790px;
-    height: 71px;
+    height: 200px;
     border: none;
     box-sizing: border-box;
     border-radius: 10px;
     background-color: #3A3939;
     position: relative;
 }
-.string {
+.listOfFilms_resultStr_poster {
+    width: 120px;
+    height: 120px;
+    box-sizing: border-box;
+    
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+.listOfFilms_resultStr_title {
     color: #F3F6F9;
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 200px;
+    top: 30px;
 }
-.user_list {
+.listOfFilms_resultStr_year {
+    color: #F3F6F9;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    position: absolute;
+    left: 200px;
+    top: 85px;
+}
+.listOfFilms_resultStr_type {
+    color: #F3F6F9;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    position: absolute;
+    left: 200px;
+    bottom: 30px;
+}
+.listOfFilms_resultList {
     margin-top: 40px;
     width: 810px;
-    height: 292px;
+    height: 610px;
     overflow: hidden;
     overflow-y: scroll;
     white-space: nowrap;
 }
-.user_list::-webkit-scrollbar {
+.listOfFilms_resultList::-webkit-scrollbar {
     width: 10px;
 }
   
-.user_list::-webkit-scrollbar-thumb {
+.listOfFilms_resultList::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #6532F8;
 }
-.user_list::-webkit-scrollbar-track {
+.listOfFilms_resultList::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: #232323;
 }
