@@ -3,7 +3,8 @@ let list = [];
 const inputNode = document.getElementById('input');
 const btnNode = document.getElementById('inputBtn');
 const listNode = document.getElementById('list');
-
+const popUpNode = document.getElementById('filmPopUp');
+let filmInfoNode = [];
 
 btnNode.addEventListener('click', function(){
     getFilmFromUser();
@@ -42,5 +43,26 @@ async function renderlist () {
         </li>`;
     });
     listNode.innerHTML = `<ol>${ListHTML}</ol>`;
+
+
+
+    filmInfoNode = document.querySelectorAll('.listOfFilms_resultStr');
+    
+    filmInfoNode.forEach((item, index) => {
+        item.addEventListener('click', function(){
+            popUpNode.innerHTML = `
+            <p class="listofFilms_popUp_title">${list[index].Title}</p>
+            <p class="listofFilms_popUp_chars">Год: ${list[index].Year}</p>
+            <p class="listofFilms_popUp_chars">Рейтинг: ${list[index].Year}</p>
+            `;
+            console.log(list[index]);
+
+            window.filmPopUp.showModal();
+
+        });
+    });
+
 };
+
+
 

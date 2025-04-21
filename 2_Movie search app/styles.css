@@ -128,3 +128,13 @@ ol, ul {
     border-radius: 10px;
     background-color: #232323;
 }
+.listofFilms_popUp {
+    box-sizing: border-box;
+    width: 930px;
+    height: 800px;
+    background-color: #635c5c;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    
+}
