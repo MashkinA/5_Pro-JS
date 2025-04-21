@@ -135,6 +135,46 @@ ol, ul {
     background-color: #635c5c;
     border: none;
     border-radius: 20px;
+    padding: 50px;
     position: relative;
-    
 }
+.listofFilms_popUp {
+    box-sizing: border-box;
+    width: 930px;
+    height: 800px;
+    background-color: #635c5c;
+    border: none;
+    border-radius: 20px;
+}
+.listofFilms_popUp_row {
+    display: flex;
+    gap: 20px;
+}
+.listOfFilms_popUp_poster {
+    width: auto;
+    height: 500px;
+    object-fit: fill;
+}
+.listofFilms_popUp_title {
+    color: #F3F6F9;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+}
+.listofFilms_popUp_chars {
+    margin-top: 43.75px;
+    color: #F3F6F9;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 400;
+}
+.listofFilms_popUp_closeButton {
+    margin-bottom: 80px;
+    color: #F3F6F9;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    border: none;
+    background: none;
+}
+
